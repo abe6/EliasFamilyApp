@@ -1,13 +1,13 @@
 PODS:
-  - AppCenter (1.11.0):
-    - AppCenter/Analytics (= 1.11.0)
-    - AppCenter/Crashes (= 1.11.0)
-  - AppCenter/Analytics (1.11.0):
+  - AppCenter (1.13.0):
+    - AppCenter/Analytics (= 1.13.0)
+    - AppCenter/Crashes (= 1.13.0)
+  - AppCenter/Analytics (1.13.0):
     - AppCenter/Core
-  - AppCenter/Core (1.11.0)
-  - AppCenter/Crashes (1.11.0):
+  - AppCenter/Core (1.13.0)
+  - AppCenter/Crashes (1.13.0):
     - AppCenter/Core
-  - AppCenter/Distribute (1.11.0):
+  - AppCenter/Distribute (1.13.0):
     - AppCenter/Core
   - AWSAuthCore (2.6.35):
     - AWSCore (= 2.6.35)
@@ -32,7 +32,7 @@ SPEC REPOS:
     - AWSMobileClient
 
 SPEC CHECKSUMS:
-  AppCenter: 3bccf8d733e337d0db574dd4cb0e33ab9637b7f2
+  AppCenter: a70408f15de23f925001bfc7b7473094a009a4eb
   AWSAuthCore: 386e045a341acebf2409425467e907ae1a45ed63
   AWSCore: 2dab62ef2e5ca5d8c72c6cbdb3a6ea1532c27c2b
   AWSDynamoDB: f4902fc37384dcf9547e2d8a32a5b208d4d1d996
