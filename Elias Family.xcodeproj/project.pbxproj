@@ -22,6 +22,10 @@
 		17BCEA4B21AE2A66006378F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BCEA4921AE2A66006378F3 /* LaunchScreen.storyboard */; };
 		17BCEA5321AE2CFC006378F3 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA5221AE2CFC006378F3 /* ShoppingListViewController.swift */; };
 		17BCEA5521AE535C006378F3 /* FeedingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA5421AE535C006378F3 /* FeedingCell.swift */; };
+		17F1AE3D21F45B02007B675B /* AWSAuthCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F1AE3C21F45B02007B675B /* AWSAuthCore.framework */; };
+		17F1AE3F21F45B02007B675B /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F1AE3E21F45B02007B675B /* AWSCore.framework */; };
+		17F1AE4121F45B02007B675B /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F1AE4021F45B02007B675B /* AWSDynamoDB.framework */; };
+		17F1AE4321F45B02007B675B /* AWSMobileClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F1AE4221F45B02007B675B /* AWSMobileClient.framework */; };
 		3D9B2AAD30E0A33D05E5E6DB /* Pods_Elias_Family.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA11AF36256E10457E0DE79 /* Pods_Elias_Family.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,10 @@
 		17BCEA4C21AE2A66006378F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17BCEA5221AE2CFC006378F3 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		17BCEA5421AE535C006378F3 /* FeedingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingCell.swift; sourceTree = "<group>"; };
+		17F1AE3C21F45B02007B675B /* AWSAuthCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSAuthCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F1AE3E21F45B02007B675B /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F1AE4021F45B02007B675B /* AWSDynamoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F1AE4221F45B02007B675B /* AWSMobileClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSMobileClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA11AF36256E10457E0DE79 /* Pods_Elias_Family.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elias_Family.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9510BF4FD4A93D5C2EC24437 /* Pods-Elias Family.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elias Family.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family.release.xcconfig"; sourceTree = "<group>"; };
 		B5C2B9CFA12ACB8D3E0540AE /* Pods-Elias Family.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elias Family.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F1AE3D21F45B02007B675B /* AWSAuthCore.framework in Frameworks */,
+				17F1AE3F21F45B02007B675B /* AWSCore.framework in Frameworks */,
+				17F1AE4121F45B02007B675B /* AWSDynamoDB.framework in Frameworks */,
+				17F1AE4321F45B02007B675B /* AWSMobileClient.framework in Frameworks */,
 				3D9B2AAD30E0A33D05E5E6DB /* Pods_Elias_Family.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +156,10 @@
 		4836F9253BC8D90EDAB8D540 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17F1AE3C21F45B02007B675B /* AWSAuthCore.framework */,
+				17F1AE3E21F45B02007B675B /* AWSCore.framework */,
+				17F1AE4021F45B02007B675B /* AWSDynamoDB.framework */,
+				17F1AE4221F45B02007B675B /* AWSMobileClient.framework */,
 				8AA11AF36256E10457E0DE79 /* Pods_Elias_Family.framework */,
 			);
 			name = Frameworks;
@@ -465,6 +481,7 @@
 			baseConfigurationReference = B5C2B9CFA12ACB8D3E0540AE /* Pods-Elias Family.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7MHQ6K9DT;
 				INFOPLIST_FILE = "Elias Family/Info.plist";
@@ -475,6 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abe.Elias-Family";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -485,6 +503,7 @@
 			baseConfigurationReference = 9510BF4FD4A93D5C2EC24437 /* Pods-Elias Family.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7MHQ6K9DT;
 				INFOPLIST_FILE = "Elias Family/Info.plist";
@@ -495,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abe.Elias-Family";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
