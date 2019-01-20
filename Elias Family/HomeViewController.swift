@@ -20,6 +20,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // Object mapper
     let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -90,6 +91,123 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         return cell
     }
+    // Run when a cell is tapped
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // Detect which notice was selected
+        let i = (notices.count - indexPath.row) - 1
+        let notice = notices[i]
+        
+        if notice._userId?.description != UIDevice.current.name {
+            let msg = "This is not your notice and so you can not edit it."
+            let alert = UIAlertController(title: "No.", message: msg, preferredStyle: UIAlertController.Style.alert)
+            
+            // Add ok button and define press action
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { (action) in
+                alert.dismiss(animated: true, completion: nil)
+            }))
+            // Present the alert
+            present(alert, animated: true, completion: nil)
+            
+        } else {
+        
+            // Build the alert
+            let msg = "What would you like to do?"
+            let alert = UIAlertController(title: "Change this note?", message: msg, preferredStyle: UIAlertController.Style.alert)
+            
+            // Add ok button and define press action
+            alert.addAction(UIAlertAction(title: "Edit", style: UIAlertAction.Style.default, handler: { (action) in
+                /// EDIT
+                alert.dismiss(animated: true, completion: nil)
+                self.editNotice(old: notice, i: i)
+            }))
+            
+            // add delete button and define action
+            alert.addAction(UIAlertAction(title: "Delete", style: UIAlertAction.Style.default, handler: { (action) in
+                // remove from db
+                var success = true
+                self.dynamoDBObjectMapper.remove(notice).continueWith(block: { (task:AWSTask<AnyObject>!) -> Any? in
+                    if let error = task.error as NSError? {
+                        print("The request failed. Error: \(error)")
+                        success = false
+                    }
+                    return nil
+                })
+                alert.dismiss(animated: true, completion: nil)
+                if success { // Alert
+                    let msg = "Your notice has been successfully deleted."
+                    let alert = UIAlertController(title: "Success", message: msg, preferredStyle: UIAlertController.Style.alert)
+                    
+                    // Add ok button and define press action
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { (action) in
+                        alert.dismiss(animated: true, completion: nil)
+                    }))
+                    //remove from array
+                    self.notices.remove(at: i)
+                    collectionView.reloadData()
+                    // Present the alert
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }))
+            
+            // Add cancel button and define press action
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: { (action) in
+                alert.dismiss(animated: true, completion: nil)
+            }))
+            // Present the alert
+            present(alert, animated: true, completion: nil)
+        }
+    }
     
+    // Edits a post
+    func editNotice(old: HomeNotices, i: Int){
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "Edit", message: "Edit your title and message below", preferredStyle: .alert)
+        
+        //2. Add the text field. first title, then message
+        alert.addTextField { (textField) in
+            textField.text = old._title?.description
+        }
+        alert.addTextField { (textField) in
+            textField.text = old._message?.description
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let newTitle = alert?.textFields![0]
+            let newMessage = alert?.textFields![1]
+            
+            old._message = newMessage?.text
+            old._title = newTitle?.text
+            
+            var success = true
+            self.dynamoDBObjectMapper.save(old).continueWith(block: { (task:AWSTask<AnyObject>!) -> Void in
+                if let error = task.error as NSError? {
+                    print("The request failed. Error: \(error)")
+                    success = false
+                }
+            }).waitUntilFinished()
+            if success { // Alert
+                let msg = "Your notice has been successfully updated."
+                let alert = UIAlertController(title: "Success", message: msg, preferredStyle: UIAlertController.Style.alert)
+                
+                // Add ok button and define press action
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: { (action) in
+                    alert.dismiss(animated: true, completion: nil)
+                }))
+                // Present the alert
+                self.present(alert, animated: true, completion: nil)
+                
+                //update the array
+                self.notices[i] = old
+                self.collectionView.reloadData()
+                
+            }
+            
+            
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }
