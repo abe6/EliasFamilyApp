@@ -23,6 +23,7 @@ class NoticeFormViewController: UIViewController {
         super.viewDidLoad()
         
         datePicker.minimumDate = NSDate() as Date
+        hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
     }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public class TimeStuff {
     
@@ -32,5 +33,17 @@ extension TimeInterval {
         formatter.zeroFormattingBehavior = .pad
         
         return formatter.string(from: self)
+    }
+}
+
+extension UIViewController {
+    public func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
