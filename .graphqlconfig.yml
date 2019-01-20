@@ -1,0 +1,16 @@
+projects:
+  eliasfamily:
+    schemaPath: graphql/schema.json
+    includes:
+      - graphql/**/*.graphql
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: swift
+        generatedFileName: API.swift
+        docsFilePath: graphql
+        graphQLApiId: 4joswrsnvbhhphu7vm2jtvvcym
+      endpoints:
+        prod: >-
+          https://qzlsmwkzfvbk3jtcwbpeonbd24.appsync-api.ap-south-1.amazonaws.com/graphql

@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "liasamily-20181128175554-authRole",
+            "UnauthRoleArn": "arn:aws:iam::190694936997:role/liasamily-20181128175554-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::190694936997:role/liasamily-20181128175554-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "liasamily-20181128175554-deployment",
+            "UnauthRoleName": "liasamily-20181128175554-unauthRole",
+            "StackName": "liasamily-20181128175554",
+            "StackId": "arn:aws:cloudformation:ap-south-1:190694936997:stack/liasamily-20181128175554/86eab080-f2da-11e8-90f7-0a791b5fd632"
+        }
+    }
+}
