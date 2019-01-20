@@ -275,7 +275,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Elias Family/Pods-Elias Family-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/AppCenter/AppCenterDistributeResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -286,7 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elias Family/Pods-Elias Family-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87CB6EA16B4BC17CBA929F15 /* [CP] Embed Pods Frameworks */ = {
@@ -297,7 +297,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Elias Family/Pods-Elias Family-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
@@ -314,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elias Family/Pods-Elias Family-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
