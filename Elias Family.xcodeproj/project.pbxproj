@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1714705121E8B4700013070C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1714705021E8B4700013070C /* Reachability.swift */; };
+		1736B72821F314AC001C1759 /* ClarkFeeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B72521F314AC001C1759 /* ClarkFeeding.swift */; };
+		1736B72A21F314AC001C1759 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1736B72721F314AC001C1759 /* awsconfiguration.json */; };
+		1736B72C21F32531001C1759 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B72B21F32531001C1759 /* NoticeCell.swift */; };
+		1736B72E21F3286C001C1759 /* TimeStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B72D21F3286C001C1759 /* TimeStuff.swift */; };
+		1736B73221F338C0001C1759 /* HomeNotices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B73121F338C0001C1759 /* HomeNotices.swift */; };
+		1736B73421F340BE001C1759 /* NoticeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B73321F340BE001C1759 /* NoticeFormViewController.swift */; };
+		1779806321AE8E1500B2C8ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1779806221AE8E1500B2C8ED /* HomeViewController.swift */; };
 		17BCEA3F21AE2A65006378F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA3E21AE2A65006378F3 /* AppDelegate.swift */; };
-		17BCEA4121AE2A65006378F3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA4021AE2A65006378F3 /* FirstViewController.swift */; };
-		17BCEA4321AE2A65006378F3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA4221AE2A65006378F3 /* SecondViewController.swift */; };
+		17BCEA4321AE2A65006378F3 /* ClarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA4221AE2A65006378F3 /* ClarkViewController.swift */; };
 		17BCEA4621AE2A65006378F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BCEA4421AE2A65006378F3 /* Main.storyboard */; };
 		17BCEA4821AE2A66006378F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BCEA4721AE2A66006378F3 /* Assets.xcassets */; };
 		17BCEA4B21AE2A66006378F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BCEA4921AE2A66006378F3 /* LaunchScreen.storyboard */; };
+		17BCEA5321AE2CFC006378F3 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA5221AE2CFC006378F3 /* ShoppingListViewController.swift */; };
+		17BCEA5521AE535C006378F3 /* FeedingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCEA5421AE535C006378F3 /* FeedingCell.swift */; };
+		3D9B2AAD30E0A33D05E5E6DB /* Pods_Elias_Family.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA11AF36256E10457E0DE79 /* Pods_Elias_Family.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17BCEA3B21AE2A65006378F3 /* Elias Family.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elias Family.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1714705021E8B4700013070C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1736B72521F314AC001C1759 /* ClarkFeeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClarkFeeding.swift; sourceTree = "<group>"; };
+		1736B72721F314AC001C1759 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		1736B72B21F32531001C1759 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
+		1736B72D21F3286C001C1759 /* TimeStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStuff.swift; sourceTree = "<group>"; };
+		1736B73121F338C0001C1759 /* HomeNotices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNotices.swift; sourceTree = "<group>"; };
+		1736B73321F340BE001C1759 /* NoticeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeFormViewController.swift; sourceTree = "<group>"; };
+		174EDE1021B0216600E2022A /* Elias Family.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elias Family.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1779806221AE8E1500B2C8ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		17BCEA3E21AE2A65006378F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17BCEA4021AE2A65006378F3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		17BCEA4221AE2A65006378F3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		17BCEA4221AE2A65006378F3 /* ClarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarkViewController.swift; sourceTree = "<group>"; };
 		17BCEA4521AE2A65006378F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17BCEA4721AE2A66006378F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17BCEA4A21AE2A66006378F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17BCEA4C21AE2A66006378F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17BCEA5221AE2CFC006378F3 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		17BCEA5421AE535C006378F3 /* FeedingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingCell.swift; sourceTree = "<group>"; };
+		8AA11AF36256E10457E0DE79 /* Pods_Elias_Family.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elias_Family.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9510BF4FD4A93D5C2EC24437 /* Pods-Elias Family.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elias Family.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family.release.xcconfig"; sourceTree = "<group>"; };
+		B5C2B9CFA12ACB8D3E0540AE /* Pods-Elias Family.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elias Family.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,40 +53,109 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9B2AAD30E0A33D05E5E6DB /* Pods_Elias_Family.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172190A121AE768F0000E35F /* AWS Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				1736B72721F314AC001C1759 /* awsconfiguration.json */,
+				1736B72521F314AC001C1759 /* ClarkFeeding.swift */,
+				1736B73121F338C0001C1759 /* HomeNotices.swift */,
+			);
+			name = "AWS Stuff";
+			sourceTree = "<group>";
+		};
+		1730D85721F05D9F006C2858 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1714705021E8B4700013070C /* Reachability.swift */,
+				1736B72D21F3286C001C1759 /* TimeStuff.swift */,
+				172190A121AE768F0000E35F /* AWS Stuff */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1736B73521F340C7001C1759 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				1736B73321F340BE001C1759 /* NoticeFormViewController.swift */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		174EDE0D21B01BFA00E2022A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1779806221AE8E1500B2C8ED /* HomeViewController.swift */,
+				1736B72B21F32531001C1759 /* NoticeCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		1779806121AE8D3300B2C8ED /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				17BCEA5221AE2CFC006378F3 /* ShoppingListViewController.swift */,
+			);
+			name = Shopping;
+			sourceTree = "<group>";
+		};
 		17BCEA3221AE2A65006378F3 = {
 			isa = PBXGroup;
 			children = (
 				17BCEA3D21AE2A65006378F3 /* Elias Family */,
-				17BCEA3C21AE2A65006378F3 /* Products */,
+				E340C16ED9A084398A93C97A /* Pods */,
+				4836F9253BC8D90EDAB8D540 /* Frameworks */,
+				174EDE1021B0216600E2022A /* Elias Family.app */,
 			);
-			sourceTree = "<group>";
-		};
-		17BCEA3C21AE2A65006378F3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				17BCEA3B21AE2A65006378F3 /* Elias Family.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		17BCEA3D21AE2A65006378F3 /* Elias Family */ = {
 			isa = PBXGroup;
 			children = (
+				17BCEA4C21AE2A66006378F3 /* Info.plist */,
 				17BCEA3E21AE2A65006378F3 /* AppDelegate.swift */,
-				17BCEA4021AE2A65006378F3 /* FirstViewController.swift */,
-				17BCEA4221AE2A65006378F3 /* SecondViewController.swift */,
+				17BCEA4921AE2A66006378F3 /* LaunchScreen.storyboard */,
 				17BCEA4421AE2A65006378F3 /* Main.storyboard */,
 				17BCEA4721AE2A66006378F3 /* Assets.xcassets */,
-				17BCEA4921AE2A66006378F3 /* LaunchScreen.storyboard */,
-				17BCEA4C21AE2A66006378F3 /* Info.plist */,
+				1730D85721F05D9F006C2858 /* Helpers */,
+				174EDE0D21B01BFA00E2022A /* Home */,
+				1779806121AE8D3300B2C8ED /* Shopping */,
+				17BCEA5921AE64D5006378F3 /* Clarke */,
+				1736B73521F340C7001C1759 /* Form */,
 			);
 			path = "Elias Family";
+			sourceTree = "<group>";
+		};
+		17BCEA5921AE64D5006378F3 /* Clarke */ = {
+			isa = PBXGroup;
+			children = (
+				17BCEA4221AE2A65006378F3 /* ClarkViewController.swift */,
+				17BCEA5421AE535C006378F3 /* FeedingCell.swift */,
+			);
+			name = Clarke;
+			sourceTree = "<group>";
+		};
+		4836F9253BC8D90EDAB8D540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA11AF36256E10457E0DE79 /* Pods_Elias_Family.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E340C16ED9A084398A93C97A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2B9CFA12ACB8D3E0540AE /* Pods-Elias Family.debug.xcconfig */,
+				9510BF4FD4A93D5C2EC24437 /* Pods-Elias Family.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17BCEA4F21AE2A66006378F3 /* Build configuration list for PBXNativeTarget "Elias Family" */;
 			buildPhases = (
+				14B392360990D3BC71FC8C48 /* [CP] Check Pods Manifest.lock */,
 				17BCEA3721AE2A65006378F3 /* Sources */,
 				17BCEA3821AE2A65006378F3 /* Frameworks */,
 				17BCEA3921AE2A65006378F3 /* Resources */,
+				87CB6EA16B4BC17CBA929F15 /* [CP] Embed Pods Frameworks */,
+				5E0E5DE2770AF712EE5AC28E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -84,7 +178,7 @@
 			);
 			name = "Elias Family";
 			productName = "Elias Family";
-			productReference = 17BCEA3B21AE2A65006378F3 /* Elias Family.app */;
+			productReference = 174EDE1021B0216600E2022A /* Elias Family.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +205,7 @@
 				Base,
 			);
 			mainGroup = 17BCEA3221AE2A65006378F3;
-			productRefGroup = 17BCEA3C21AE2A65006378F3 /* Products */;
+			productRefGroup = 17BCEA3221AE2A65006378F3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -125,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1736B72A21F314AC001C1759 /* awsconfiguration.json in Resources */,
 				17BCEA4B21AE2A66006378F3 /* LaunchScreen.storyboard in Resources */,
 				17BCEA4821AE2A66006378F3 /* Assets.xcassets in Resources */,
 				17BCEA4621AE2A65006378F3 /* Main.storyboard in Resources */,
@@ -133,14 +228,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14B392360990D3BC71FC8C48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elias Family-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E0E5DE2770AF712EE5AC28E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AppCenter/AppCenterDistributeResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppCenterDistributeResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87CB6EA16B4BC17CBA929F15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elias Family/Pods-Elias Family-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17BCEA3721AE2A65006378F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17BCEA4321AE2A65006378F3 /* SecondViewController.swift in Sources */,
+				1736B73421F340BE001C1759 /* NoticeFormViewController.swift in Sources */,
+				17BCEA5321AE2CFC006378F3 /* ShoppingListViewController.swift in Sources */,
+				17BCEA4321AE2A65006378F3 /* ClarkViewController.swift in Sources */,
+				1736B73221F338C0001C1759 /* HomeNotices.swift in Sources */,
+				1736B72E21F3286C001C1759 /* TimeStuff.swift in Sources */,
+				1779806321AE8E1500B2C8ED /* HomeViewController.swift in Sources */,
 				17BCEA3F21AE2A65006378F3 /* AppDelegate.swift in Sources */,
-				17BCEA4121AE2A65006378F3 /* FirstViewController.swift in Sources */,
+				1736B72821F314AC001C1759 /* ClarkFeeding.swift in Sources */,
+				17BCEA5521AE535C006378F3 /* FeedingCell.swift in Sources */,
+				1714705121E8B4700013070C /* Reachability.swift in Sources */,
+				1736B72C21F32531001C1759 /* NoticeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +462,13 @@
 		};
 		17BCEA5021AE2A66006378F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C2B9CFA12ACB8D3E0540AE /* Pods-Elias Family.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7MHQ6K9DT;
 				INFOPLIST_FILE = "Elias Family/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,10 +482,13 @@
 		};
 		17BCEA5121AE2A66006378F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9510BF4FD4A93D5C2EC24437 /* Pods-Elias Family.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7MHQ6K9DT;
 				INFOPLIST_FILE = "Elias Family/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

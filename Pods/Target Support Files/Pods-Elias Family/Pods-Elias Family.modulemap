@@ -1,0 +1,6 @@
+framework module Pods_Elias_Family {
+  umbrella header "Pods-Elias Family-umbrella.h"
+
+  export *
+  module * { export * }
+}
