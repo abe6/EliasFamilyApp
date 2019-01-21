@@ -11,7 +11,7 @@ import UIKit
 import AWSCore
 import AWSDynamoDB
 
-class NoticeFormViewController: UIViewController {
+class NoticeFormViewController: UIViewController, UITextViewDelegate {
     //Links to objects
     @IBOutlet weak var titlee: UITextField!
     @IBOutlet weak var textBox: UITextView!
@@ -21,6 +21,10 @@ class NoticeFormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textBox.text = "Write Your Message Here"
+        textBox.textColor = UIColor.lightGray
+        textBox.delegate = self
         
         datePicker.minimumDate = NSDate() as Date
         hideKeyboardWhenTappedAround()
@@ -74,4 +78,17 @@ class NoticeFormViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //Functions for setting and removing placeholder text in textbox
+    func textViewDidBeginEditing(_ textBox: UITextView) {
+        if textBox.textColor == UIColor.lightGray {
+            textBox.text = nil
+            textBox.textColor = UIColor.black
+        }
+    }
+    func textViewDidEndEditing(_ textBox: UITextView) {
+        if textBox.text.isEmpty {
+            textBox.text = "Write Your Message Here"
+            textBox.textColor = UIColor.lightGray
+        }
+    }
 }
