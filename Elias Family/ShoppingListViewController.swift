@@ -23,6 +23,14 @@ class ShoppingListViewController: UIViewController, UICollectionViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(ShoppingListViewController.longPress(longPressGestureRecognizer:)))
+        collectionView.addGestureRecognizer(longPressRecognizer)
+        
+        fillArrayWithItems()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         fillArrayWithItems()
     }
     
@@ -69,7 +77,7 @@ class ShoppingListViewController: UIViewController, UICollectionViewDelegate, UI
     @IBAction func itemTrash(_ sender: UIButton) {
         if lastClicked != nil {
             // Build the alert
-            let msg = "Are you sure youd like to delete the shopping item \(self.lastClicked?._title?.description ?? "")"
+            let msg = "Are you sure you'd like to delete the shopping item '\(self.lastClicked?._title?.description ?? "")'"
             let alert = UIAlertController(title: "Delete this shopping item?", message: msg, preferredStyle: UIAlertController.Style.alert)
             
             // add delete button and define action
@@ -85,7 +93,7 @@ class ShoppingListViewController: UIViewController, UICollectionViewDelegate, UI
                 })
                 alert.dismiss(animated: true, completion: nil)
                 if success { // Alert
-                    let msg = "The shopping item has been deleted"
+                    let msg = "The shopping item has been deleted."
                     let alert = UIAlertController(title: "Success", message: msg, preferredStyle: UIAlertController.Style.alert)
                     
                     // Add ok button and define press action
@@ -152,8 +160,10 @@ class ShoppingListViewController: UIViewController, UICollectionViewDelegate, UI
         let i = (items.count - indexPath.row) - 1
         let item = items[i]
         
+        // Set it as last clicked
         lastClicked = item
         
+        // Set info screen
         itemName.text = "Item Name: \(item._title?.description ?? "")"
         itemDescription.text = "Description: \(item._description?.description ?? "")"
         addedBy.text = "Added By: \(item._userId?.description ?? "")"
@@ -164,5 +174,44 @@ class ShoppingListViewController: UIViewController, UICollectionViewDelegate, UI
         
         let pp = item._purchased?.boolValue
         if pp! {purchased.text = "Purchased: Yes"} else {purchased.text = "Purchased: No"}
+    }
+    
+    // Detects long hold on cell and toggles purchased
+    @objc func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
+        // Happens at start of trigger
+        if longPressGestureRecognizer.state == UIGestureRecognizer.State.began {
+            let touchPoint = longPressGestureRecognizer.location(in: collectionView)
+            // Only proceedes if index path can be found (actually held a cell)
+            if let indexPath = collectionView.indexPathForItem(at: touchPoint){
+                // Detect which item was selected
+                let i = (items.count - indexPath.row) - 1
+                let item = items[i]
+                
+                if item._purchased?.boolValue == true {
+                    item._purchased = false
+                } else {
+                    item._purchased = true
+                }
+                
+                // Update DB
+                var success = false
+                dynamoDBObjectMapper.save(item).continueWith(block: { (task:AWSTask<AnyObject>!) -> Void in
+                    if let error = task.error as NSError? {
+                        print("The request failed. Error: \(error)")
+                    }else{
+                        success = true
+                    }
+                }).waitUntilFinished()
+                if success {
+                    self.items[i] = item
+                    self.collectionView.reloadData()
+                    
+                }
+                
+            } else {
+                print("Couldnt find indexpath")
+                
+            }
+        }
     }
 }

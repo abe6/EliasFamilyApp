@@ -13,8 +13,17 @@ class ShoppingItemCell: UICollectionViewCell {
     @IBOutlet weak var itemName: UILabel!
     
     func setUp(item: ShoppingItem){
+        
         // Sets the text labels
         itemName.text = item._title?.description
+        
+        if (item._purchased?.boolValue) == true {
+            self.backgroundColor = UIColor.darkGray
+            itemName.textColor = UIColor.lightGray
+        }else{
+            self.backgroundColor = UIColor.white
+            itemName.textColor = UIColor.darkGray
+        }
         
         self.layer.cornerRadius = 10
         self.layer.masksToBounds = true
