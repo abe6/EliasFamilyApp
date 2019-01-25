@@ -26,7 +26,7 @@ class NoticeCell: UICollectionViewCell {
         Message.text = notice._message
         Message.sizeToFit()
         
-        self.layer.cornerRadius = 10
+        self.layer.cornerRadius = 20
         self.layer.masksToBounds = true
     }
 }

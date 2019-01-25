@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1714705121E8B4700013070C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1714705021E8B4700013070C /* Reachability.swift */; };
-		1736B72821F314AC001C1759 /* ClarkFeeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B72521F314AC001C1759 /* ClarkFeeding.swift */; };
 		1736B72C21F32531001C1759 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B72B21F32531001C1759 /* NoticeCell.swift */; };
 		1736B72E21F3286C001C1759 /* TimeStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B72D21F3286C001C1759 /* TimeStuff.swift */; };
 		1736B73221F338C0001C1759 /* HomeNotices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B73121F338C0001C1759 /* HomeNotices.swift */; };
 		1736B73421F340BE001C1759 /* NoticeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B73321F340BE001C1759 /* NoticeFormViewController.swift */; };
+		173DEAA921FAC63200331A25 /* ClarkFeeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173DEAA821FAC63200331A25 /* ClarkFeeding.swift */; };
 		1779806321AE8E1500B2C8ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1779806221AE8E1500B2C8ED /* HomeViewController.swift */; };
 		17858AF621F5DEB1006F359E /* ShoppingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17858AF521F5DEB1006F359E /* ShoppingItemCell.swift */; };
 		17858AF821F5E812006F359E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 17858AF721F5E812006F359E /* awsconfiguration.json */; };
@@ -34,11 +34,11 @@
 
 /* Begin PBXFileReference section */
 		1714705021E8B4700013070C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		1736B72521F314AC001C1759 /* ClarkFeeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClarkFeeding.swift; sourceTree = "<group>"; };
 		1736B72B21F32531001C1759 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		1736B72D21F3286C001C1759 /* TimeStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStuff.swift; sourceTree = "<group>"; };
 		1736B73121F338C0001C1759 /* HomeNotices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNotices.swift; sourceTree = "<group>"; };
 		1736B73321F340BE001C1759 /* NoticeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeFormViewController.swift; sourceTree = "<group>"; };
+		173DEAA821FAC63200331A25 /* ClarkFeeding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClarkFeeding.swift; sourceTree = "<group>"; };
 		174EDE1021B0216600E2022A /* Elias Family.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elias Family.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1779806221AE8E1500B2C8ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		17858AF521F5DEB1006F359E /* ShoppingItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemCell.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				17858AF721F5E812006F359E /* awsconfiguration.json */,
-				1736B72521F314AC001C1759 /* ClarkFeeding.swift */,
+				173DEAA821FAC63200331A25 /* ClarkFeeding.swift */,
 				1736B73121F338C0001C1759 /* HomeNotices.swift */,
 				17858AF921F5E819006F359E /* ShoppingItem.swift */,
 			);
@@ -337,12 +337,12 @@
 				1736B73421F340BE001C1759 /* NoticeFormViewController.swift in Sources */,
 				17858AFA21F5E819006F359E /* ShoppingItem.swift in Sources */,
 				17BCEA5321AE2CFC006378F3 /* ShoppingListViewController.swift in Sources */,
+				173DEAA921FAC63200331A25 /* ClarkFeeding.swift in Sources */,
 				17BCEA4321AE2A65006378F3 /* ClarkViewController.swift in Sources */,
 				1736B73221F338C0001C1759 /* HomeNotices.swift in Sources */,
 				1736B72E21F3286C001C1759 /* TimeStuff.swift in Sources */,
 				1779806321AE8E1500B2C8ED /* HomeViewController.swift in Sources */,
 				17BCEA3F21AE2A65006378F3 /* AppDelegate.swift in Sources */,
-				1736B72821F314AC001C1759 /* ClarkFeeding.swift in Sources */,
 				17858AFC21F5F99D006F359E /* ShoppingFormViewController.swift in Sources */,
 				17BCEA5521AE535C006378F3 /* FeedingCell.swift in Sources */,
 				1714705121E8B4700013070C /* Reachability.swift in Sources */,

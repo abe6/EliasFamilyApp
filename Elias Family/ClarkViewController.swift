@@ -108,6 +108,7 @@ class ClarkViewController: UIViewController, UITableViewDataSource, UITableViewD
         let newFeeding = ClarkFeeding()
         newFeeding?._userId = UIDevice.current.name
         newFeeding?._time = "\(Date().timeIntervalSince1970)"
+        newFeeding?._imageNum = "\(Int.random(in: 1 ... 3))"
         
         var success = true
         dynamoDBObjectMapper.save(newFeeding!).continueWith(block: { (task:AWSTask<AnyObject>!) -> Void in
